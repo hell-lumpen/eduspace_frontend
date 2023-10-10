@@ -1,0 +1,19 @@
+.block-wrapper {
+    display: flex;
+    height: 180px;
+    border-radius: 15px;
+    border: thin black;
+    margin: 10px;
+}
+
+[data-theme='light'] {
+    .block-wrapper {
+        background: #FFFFFF;
+    }
+}
+
+[data-theme='dark'] {
+    .block-wrapper {
+        background: #1F1F1F;
+    }
+}

@@ -1,0 +1,76 @@
+.App {
+  display: flex;
+}
+
+.nav-bar-wrapper {
+  height: 100vh;
+  /*background: cadetblue;*/
+  width: 50px;
+}
+
+.main-content-wrapper {
+  /*background: burlywood;*/
+  flex: 1;
+  width: 75%;
+  position: relative;
+}
+
+.sexy-block-wrapper {
+  background: aquamarine;
+  /*position: sticky;*/
+  width: 25%;
+}
+
+/*line-height: 1.15;*/
+/*-webkit-text-size-adjust: 100%;*/
+/*--swiper-theme-color: #007aff;*/
+/*--swiper-navigation-size: 44px;*/
+/*font-family: -apple-system,BlinkMacSystemFont,Arial,sans-serif;*/
+/*--safe-area-inset-top: env(safe-area-inset-top);*/
+/*--main-menu-height: 56px;*/
+/*transition: opacity .2s ease-in-out,color .2s ease-in-out,text-decoration .2s ease-in-out,background-color .2s ease-in-out,-webkit-text-decoration .2s ease-in-out;*/
+/*padding: 12px 0;*/
+/*bottom: 0;*/
+/*position: sticky;*/
+/*quotes: "«" "»";*/
+/*margin-top: 0px;*/
+
+
+/*line-height: 1.15;*/
+/*-webkit-text-size-adjust: 100%;*/
+/*--swiper-theme-color: #007aff;*/
+/*--swiper-navigation-size: 44px;*/
+/*font-family: -apple-system,BlinkMacSystemFont,Arial,sans-serif;*/
+/*--safe-area-inset-top: env(safe-area-inset-top);*/
+/*--main-menu-height: 56px;*/
+/*transition: opacity .2s ease-in-out,color .2s ease-in-out,text-decoration .2s ease-in-out,background-color .2s ease-in-out,-webkit-text-decoration .2s ease-in-out;*/
+/*padding: 12px 0;*/
+/*quotes: "«" "»";*/
+/*margin-top: 0px;*/
+
+[data-theme='light'] {
+  .App {
+    background: #b4b4b4;
+  }
+}
+
+[data-theme='dark'] {
+  .App {
+    background: #525252;
+  }
+}
+
+@media (max-width: 1000px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .main-content-wrapper {
+    width: 100%;
+  }
+
+  .sexy-block-wrapper {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

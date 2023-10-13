@@ -29,17 +29,17 @@ const NavBarComponent = () => {
   }, [themeVariant]);
 
   return (
-      <div className="--nav--bar--wrapper">
-        <div className={"NavigationPanel"}>
+      <span className="--nav--bar--wrapper">
+        <span className={"nav-panel"}>
           <button className="nav-bar-button">
             <PersonIcon className="nav-bar-icon-button" />
           </button>
           <button className="nav-bar-button">
             <LectureIcon className="nav-bar-icon-button" />
           </button>
-          <button className="nav-bar-button">
-            <TaskIcon className="nav-bar-icon-button" />
-          </button>
+          {/*<button className="nav-bar-button">*/}
+          {/*  <TaskIcon className="nav-bar-icon-button" />*/}
+          {/*</button>*/}
           <button className="nav-bar-button">
             <CalendarIcon className="nav-bar-icon-button" />
           </button>
@@ -49,8 +49,8 @@ const NavBarComponent = () => {
           <button onClick={changeThemeBtn} className="nav-bar-button">
             {themeIcon}
           </button>
-        </div>
-      </div>
+        </span>
+      </span>
   );
 };
 

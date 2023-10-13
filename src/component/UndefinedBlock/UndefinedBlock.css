@@ -1,9 +1,11 @@
 .block-wrapper {
     display: flex;
-    height: 180px;
+    height: auto;
     border-radius: 15px;
     border: thin black;
-    margin: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 [data-theme='light'] {

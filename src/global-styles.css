@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
 .App {
   display: flex;
   padding-right: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+div, span, p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .nav-bar-wrapper {

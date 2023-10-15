@@ -73,14 +73,22 @@ div, span, p {
 
 [data-theme='light'] {
   .App {
-    background: #FBFBFB;
+    background: var(--light-theme-background-color);
+
+    animation-name : to_light_theme_block;
+    animation-duration: 0.8s;
+
     color: black;
   }
 }
 
 [data-theme='dark'] {
   .App {
-    background: #070410;
+    background: var(--dark-theme-background-color);
+
+    animation-name : to_dark_theme_block;
+    animation-duration: 0.8s;
+
     color: white;
   }
 }
@@ -101,3 +109,6 @@ div, span, p {
     flex-direction: column;
   }
 }
+
+
+

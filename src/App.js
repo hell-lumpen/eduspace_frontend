@@ -1,4 +1,6 @@
 import './global-styles.css';
+import './global-variables.css';
+import './global-animation.css';
 import NavBarComponent from "./component/NavBarComponent/NavBarComponent";
 import UndefinedBlock from "./component/UndefinedBlock/UndefinedBlock";
 import {useEffect, useRef} from "react";

@@ -6,19 +6,20 @@ import { ReactComponent as CalendarIcon } from "../../assets/calendar.svg";
 import { ReactComponent as MailIcon } from "../../assets/mail.svg";
 import { ReactComponent as LightIcon } from "../../assets/light.svg";
 import { ReactComponent as DarkIcon } from "../../assets/dark.svg";
+import { motion } from "framer-motion";
 import "./NavBarComponent.css";
 
 const NavBarComponent = () => {
   const [themeVariant, setThemeVariant] = useState("Light");
-  const [themeIcon, setThemeIcon] = useState(<LightIcon className={"nav-bar-icon-button"} />);
+  const [themeIcon, setThemeIcon] = useState(<LightIcon id="icon-change-theme" className={"nav-bar-icon-button"} />);
 
   const changeThemeBtn = () => {
     if (themeVariant === "Light") {
-      setThemeIcon(<DarkIcon className={"nav-bar-icon-button"} />);
+      setThemeIcon(<DarkIcon id="icon-change-theme" className={"nav-bar-icon-button"} />);
       setThemeVariant("Dark");
       document.body.setAttribute("data-theme", "dark");
     } else {
-      setThemeIcon(<LightIcon className={"nav-bar-icon-button"} />);
+      setThemeIcon(<LightIcon id="icon-change-theme" className={"nav-bar-icon-button"} />);
       setThemeVariant("Light");
       document.body.setAttribute("data-theme", "light");
     }

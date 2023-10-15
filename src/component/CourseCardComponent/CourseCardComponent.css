@@ -32,9 +32,12 @@
 [data-theme='light'] {
     .course-card-wrapper:hover {
         background: rgba(187, 187, 187, 25%);
+
     }
     .course-card-wrapper {
-        background: #FFFFFF;
+        background: var(--light-theme-block-color);
+        animation-name : to_light_theme_block;
+        animation-duration: 0.5s;
     }
     .tag {
         background: #87d2ce;
@@ -43,7 +46,10 @@
 
 [data-theme='dark'] {
     .course-card-wrapper {
-        background: #1F1F1F;
+        background: var(--dark-theme-block-color);
+        animation-name : to_dark_theme_block;
+        animation-duration: 0.5s;
+
     }
     .tag {
         background: #2e1e47;

@@ -1,20 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 
+@font-face {
+  font-family: 'MTSSans-Regular';
+  src: url('../src/assets/fonts/MTSSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MTSText-Regular';
+  src: url('../src/assets/fonts/MTSText-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MTSUltraExtended-Bold';
+  src: url('../src/assets/fonts/MTSUltraExtended-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MTSUltraExtended-Regular';
+  src: url('../src/assets/fonts/MTSUltraExtended-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .App {
   display: flex;
   padding-right: 20px;
 }
 
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 24px;
+h1 {
+  font-family: 'MTSUltraExtended-Bold', sans-serif;
+  font-size: 28px;
+}
+
+h2, h3 {
+  font-family: 'MTSText-Regular', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 div, span, p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: 'MTSText-Regular', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .nav-bar-wrapper {
@@ -25,7 +59,6 @@ div, span, p {
   display: flex;
   flex: 1;
   margin-bottom: 40px;
-  margin-top: 40px;
 }
 
 .main-content-wrapper {

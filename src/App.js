@@ -3,7 +3,8 @@ import NavBarComponent from "./component/NavBarComponent/NavBarComponent";
 import UndefinedBlock from "./component/UndefinedBlock/UndefinedBlock";
 import {useEffect, useRef} from "react";
 import CourseCardComponent from "./component/CourseCardComponent/CourseCardComponent";
-import img from "./logo.svg";
+import img1 from "../src/assets/Глубокое обучение и искусственный интеллект.jpg"
+import img2 from "../src/assets/Математика для DataScience.jpg"
 
 function App() {
 
@@ -46,38 +47,63 @@ function App() {
         </span>
         <div className="content">
           <div className="main-content-wrapper" ref={rightColumnRef}>
-            <h1>
-              Статистика будет чуть пiзже
-            </h1>
-            <CourseCardComponent courseName={"Глубокое обучение и искусственный интеллект"}
-                                 description={"Изучите процесс обучения нейросетей методом обратного распространения ошибки."}
-                                 prepodName={"Иванов Иван Иванович"}
-                                 tags={["#онлайн-магистратура", "#кафедра_806", "#пук пук", "#сс_крылов", "#отчисление", "#леша_долбоеб"]}
-                                 pathToIcon={"https://img.freepik.com/premium-photo/book-stacking-open-book-hardback-books-wooden-table-blue-background-back-school_488220-373.jpg?w=740"}/>
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
+            <h1>Образовательное пространство | Московский авиационный институт</h1>
+            <UndefinedBlock text={"Доброе утро, долбоеб"}/>
+
+            <div className="course-block">
+              <h1>
+                Мои курсы
+              </h1>
+              <div className="course-container">
+                <CourseCardComponent courseName={"Глубокое обучение и искусственный интеллект"}
+                                     description={"Изучите процесс обучения нейросетей методом обратного распространения ошибки."}
+                                     prepodName={"Иванов Иван Иванович"}
+                                     tags={["#онлайн-магистратура", "#кафедра_806"]}
+                                     pathToIcon={img1}/>
+                <CourseCardComponent courseName={"Математика для DataScience"}
+                                     description={"Математика в Data Science является ключевым инструментом, обеспечивая основу для разработки и понимания алгоритмов машинного обучения."}
+                                     prepodName={"Романенков Александр Михайлович"}
+                                     tags={["#онлайн-магистратура", "#кафедра_806"]}
+                                     pathToIcon={img2}/>
+              <CourseCardComponent courseName={"Глубокое обучение и искусственный интеллект"}
+                                     description={"Изучите процесс обучения нейросетей методом обратного распространения ошибки."}
+                                     prepodName={"Иванов Иван Иванович"}
+                                     tags={["#онлайн-магистратура", "#кафедра_806"]}
+                                     pathToIcon={img1}/>
+                <CourseCardComponent courseName={"Математика для DataScience"}
+                                     description={"Математика в Data Science является ключевым инструментом, обеспечивая основу для разработки и понимания алгоритмов машинного обучения."}
+                                     prepodName={"Романенков Александр Михайлович"}
+                                     tags={["#онлайн-магистратура", "#кафедра_806"]}
+                                     pathToIcon={img2}/>
+              <CourseCardComponent courseName={"Глубокое обучение и искусственный интеллект"}
+                                     description={"Изучите процесс обучения нейросетей методом обратного распространения ошибки."}
+                                     prepodName={"Иванов Иван Иванович"}
+                                     tags={["#онлайн-магистратура", "#кафедра_806"]}
+                                     pathToIcon={img1}/>
+                <CourseCardComponent courseName={"Математика для DataScience"}
+                                     description={"Математика в Data Science является ключевым инструментом, обеспечивая основу для разработки и понимания алгоритмов машинного обучения. Математика в Data Science является ключевым инструментом, обеспечивая основу для разработки и понимания алгоритмов машинного обучения."}
+                                     prepodName={"Романенков Александр Михайлович"}
+                                     tags={["#онлайн-магистратура", "#кафедра_806"]}
+                                     pathToIcon={img2}/>
+              </div>
+            </div>
           </div>
           <div className="sexy-block-wrapper">
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
-            <UndefinedBlock />
+            <div className="schedule-container">
+              <h1>
+                Расписание
+              </h1>
+              <UndefinedBlock />
+            </div>
+
+            <div className="task-container">
+              <h1>
+                Задания
+              </h1>
+              <UndefinedBlock />
+              <UndefinedBlock />
+              <UndefinedBlock />
+            </div>
           </div>
         </div>
 

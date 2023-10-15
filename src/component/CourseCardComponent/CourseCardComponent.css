@@ -8,18 +8,20 @@
     justify-items: flex-start;
 }
 
+
 .course-card-wrapper {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     border: thin black;
     padding: 15px 5px 15px 20px;
     min-width: 300px;
-    max-width: 600px;
+    width: 45%;
     display: block;
     margin: 20px;
+    position: relative;
+
     flex: 1;
 }
-
 .course-card-wrapper h2 {
     line-height: 1.5;
     min-height: 3em;
@@ -52,7 +54,7 @@
 }
 
 .card-content {
-    height: 145px;
+    height: 170px;
     display: flex;
 }
 
@@ -77,23 +79,22 @@
 .card-text-content-prepod {
     margin: 10px 5px 5px;
     font-weight: bold;
-    line-height: 1;
 }
 
 .card-text-content-description {
     margin: 0;
-    line-height: 1.3;
+    line-height: 1.5;
 }
 
 .tags-container {
     /*justify-content: center;*/
     flex-wrap: wrap;
     display: flex;
-    margin: 10px 10px 0;
+    margin-top: 15px;
 }
 
 .tag {
-    margin: 5px;
+    margin-right: 5px;
     padding: 5px;
     border-radius: 5px;
     background: #ffe8ae;
@@ -106,7 +107,7 @@
 }
 
 @media (max-width: 500px) {
-    .course-container {
+    .course-block {
         /*display: none;*/
     }
 

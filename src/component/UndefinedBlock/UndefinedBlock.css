@@ -13,7 +13,7 @@
         background: var(--light-theme-block-color);
 
         animation-name : to_light_theme_block;
-        animation-duration: 0.5s;
+        animation-duration: 0.3s;
 
     }
 }
